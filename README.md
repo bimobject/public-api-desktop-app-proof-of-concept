@@ -1,4 +1,4 @@
-Bimobject API Demo Desktop Application: Authorization code with Proof key example.
+BIMobject API Demo Desktop Application: Authorization code with Proof key example.
 ============
 
 An example of how you can use the authorization code with proof key flow from a Windows
@@ -12,8 +12,8 @@ When developing native applications it is important to follow best practices,
 this requires using a browser in the authorization process, but not an embedded browser.
 
 This sample demonstrates how with the client ID and client secret from the developer.bimobject.com you can 
-send an authorization request where a user can either either login in and approve the API usage or if they are already
-logged in and just need to approve the API scopes.
+send an authorization request where a user can either either login in and approve the API usage or, if they are already
+logged in, just need to approve the API scopes.
 It shows that upon completing this consent process, you will recieve and authorization code using a local loopback
 socket, and by exchanging that code for authorization tokens will allow the application to call the BIMobject API.
 
