@@ -1,0 +1,16 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+.vs/*
+packages/*
+/BIMobjectAPIDemoDesktopApp/bin/*
+/BIMobjectAPIDemoDesktopApp/obj/*
+*.pdb
+*.bak
+*.csproj.user
+*.pubxml
+*.pubxml.user
+*.suo
+*.nupkg
+*.DotSettings.user
