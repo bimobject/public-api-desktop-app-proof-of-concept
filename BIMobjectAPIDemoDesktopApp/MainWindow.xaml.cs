@@ -110,6 +110,7 @@ namespace BIMobjectAPIDemoDesktopApp
             // Starts the code exchange at the Token Endpoints and uses the token to get a list of products
             await PerformCodeExchange(code, codeVerifier, redirectUri);
             productList.IsEnabled = true;
+            DownloadButton.IsEnabled = true;
             GetProducts(TokenStore.AccessToken);
         }
 
@@ -119,7 +120,7 @@ namespace BIMobjectAPIDemoDesktopApp
             var tokenRequestBody = $"code={code}&redirect_uri={redirectUri}&client_id={_clientId}&code_verifier={codeVerifier}&client_secret={_clientSecret}&scope={Scopes}&grant_type=authorization_code";
             var response = await ApiRequestHelper.PostRequest<Dictionary<string, string>>(Endpoints.TokenEndpoint, tokenRequestBody); 
 
-            // Get all the acces_token and refresh_token and the expiry from the response
+            // Get all the access_token and refresh_token and the expiry from the response
             TokenStore.Update(response.Result);
         }
 

@@ -131,6 +131,6 @@
         <Button x:Name="button" Content="Download location" HorizontalAlignment="Left" Margin="6,109,0,0" VerticalAlignment="Top" Width="104" Click="Download_Click" Height="23" Grid.ColumnSpan="3"/>
         <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="24,83,0,0" VerticalAlignment="Top" Width="229" Height="21" Grid.Column="2" Grid.ColumnSpan="2"/>
         <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Margin="73.78,53,0,0" VerticalAlignment="Top" Width="113" Height="79" Grid.Column="3" Click="Login" Grid.ColumnSpan="2"/>
-        <Button x:Name="button1" Content="Download selected item" Grid.Column="3" HorizontalAlignment="Left" Margin="41,313,0,0" VerticalAlignment="Top" Width="146" Grid.ColumnSpan="2" Height="33" Click="Download"/>
+        <Button x:Name="DownloadButton" IsEnabled="False" Content="Download selected item" Grid.Column="3" HorizontalAlignment="Left" Margin="41,313,0,0" VerticalAlignment="Top" Width="146" Grid.ColumnSpan="2" Height="33" Click="Download"/>
     </Grid>
 </Window>
